@@ -85,3 +85,10 @@ thereby making it easier to scan code.
 Simply run:
 
     bin/install
+
+## Prior art
+
+* [thoughtbot]'s [laptop] script
+
+[thoughtbot]: https://github.com/thoughtbot
+[laptop]: https://github.com/thoughtbot/laptop
