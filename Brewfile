@@ -1,3 +1,4 @@
+brew "bash"
 brew "coreutils"
 brew "heroku/brew/heroku"
 brew "mas"

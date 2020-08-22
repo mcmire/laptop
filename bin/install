@@ -167,6 +167,7 @@ create-symlink() {
 
   if ! [[ -e "$full_destination_path" || -L "$full_destination_path" ]]; then
     run ln -s "$full_source_path" "$full_destination_path"
+    echo "Installed to $profiles_plist."
   fi
 }
 
@@ -182,9 +183,8 @@ main() {
   run brew bundle
 
   banner "Installing iTerm profiles"
-  profiles_plist="$HOME/Library/Application Support/iTerm2/DynamicProfiles/profiles.plist" 
+  profiles_plist="$HOME/Library/Application Support/iTerm2/DynamicProfiles/profiles.plist"
   create-symlink $(absolute-path-of src/iterm-dynamic-profiles.plist) "$profiles_plist"
-  echo "Installed to $profiles_plist."
 
   if ! [[ -d "$HOME/.tmux/plugins/tpm" ]]; then
     banner "Installing tpm"

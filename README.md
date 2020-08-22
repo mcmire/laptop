@@ -4,11 +4,12 @@ This repo bootstraps a new Mac optimized for web development.
 
 ## [What's in the box?][se7en]
 
-[se7en]: https://www.youtube.com/watch?v=1giVzxyoclE&feature=youtu.be&t=122
+[se7en]: https://youtu.be/1giVzxyoclE?t=122
 
 ### Applications
 
-* **[iTerm]** — a more capable terminal than Terminal.app ([see notes][iterm])
+* **[iTerm]** — a more capable terminal than Terminal.app
+  ([More details →](#iterm-configuration))
 * **Google Chrome** — the new Internet Explorer
 * **Firefox** — for when Chrome doesn't work
 * **Slack** — everyone's favorite chat app
@@ -50,7 +51,7 @@ This repo bootstraps a new Mac optimized for web development.
 iTerm is preconfigured to use [Solarized] as the color set
 and [Fira Code] as the font.
 
-### More on Solarized
+### Why Solarized?
 
 I've chosen Solarized
 because it is a color scheme
@@ -66,7 +67,7 @@ for dark and light modes.
 These profiles are installed as a symlink at
 `~/Library/Application Support/iTerm2/DynamicProfiles/profiles.plist`.
 
-### More on Fira Code
+### Why Fira Code?
 
 I've chosen Fira Code
 because it uses ligatures to represent combinations of symbols that are frequently used in code
